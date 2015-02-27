@@ -9,5 +9,5 @@ var STATES = [
 	      ];
 
 if (typeof module != "undefined" && module.exports)
-	module.exports = MOUNTAINS;
+	module.exports = STATES;
 
