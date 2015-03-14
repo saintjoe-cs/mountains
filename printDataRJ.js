@@ -28,7 +28,9 @@ function dataTable(data) {
       if ((typeof value == "number"))
         return new RTextCell(String(value));
       else
-        if(typeof value == "string" && value.match(dateReg))
+	// Let's change the way we use the regex as per Ch. 9
+        // if(typeof value == "string" && value.match(dateReg))
+	if(typeof value == "string" && dateReg.test(value))
 	  return new RTextCell(String(value));
 	else
           return new TextCell(String(value));
