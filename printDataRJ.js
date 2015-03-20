@@ -13,7 +13,7 @@ load('larder.js');
 //   You can turn it on and off with this variable
 var rightJustifyDates = true;
 // This regular expression contains logic-by-pattern to identify a date
-var dateReg = (rightJustifyDates?/^(\d{2}|\d)[.-/](\d|\d{2})[.-/]\d{2}$/:null);
+var dateReg = (rightJustifyDates?/^(\d{2}|\d)[-./](\d|\d{2})[-./]\d{2}$/:null);
 
 function dataTable(data) {
   var keys = Object.keys(data[0]);
